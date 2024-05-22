@@ -16,7 +16,9 @@ mobileMenuToggle.addEventListener("click", () => {
 });
 
 loginMenuToggle.addEventListener("click", () => {
+  loginMenuToggle.classList.toggle("text-sky-500");
   loginMenuOpen.classList.toggle("hidden");
   loginMenuClose.classList.toggle("hidden");
   loginMenu.classList.toggle("hidden");
+  loginMenu.classList.toggle("md:opacity-100");
 });
