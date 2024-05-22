@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link rel="stylesheet" href="/assets/css/output.css">
-  <link rel="shortcut icon" href="/assets/svg/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
   <title>My Learning Passport</title>
 </head>
 
