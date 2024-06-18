@@ -1,2 +1,2 @@
 <?php
-require(__DIR__ . '/../views/home.php');
+require(__DIR__ . '/../views/home.view.php');
