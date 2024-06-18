@@ -10,6 +10,4 @@
   <title>My Learning Passport</title>
 </head>
 
-<body class="min-h-screen relative bg-slate-900">
-
-  <?php require_once(__DIR__ . '/template.navbar.php'); ?>
+<body class="min-h-screen relative">
