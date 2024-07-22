@@ -1,12 +1,16 @@
 <?php
-require '../views/partials/head.php';
-require '../views/partials/nav.php';
-?>
+const BASE_PATH = __DIR__ . '/../';
 
-<main class="pt-20 text-white">
-  <h1>Home page!</h1>
-</main>
+require BASE_PATH . 'Core/functions.php';
 
-<?php
-require '../views/partials/footer.php';
-?>
+spl_autoload_register(function ($class) {
+  $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+  require base_path("{$class}.php");
+});
+
+$router = new Core\Router();
+$routes = require base_path('routes.php');
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'] ?? '/';
+$method = $_SERVER['REQUEST_METHOD'];
+
+$router->route($uri, $method);
