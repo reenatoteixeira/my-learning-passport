@@ -7,9 +7,9 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/svg/logo.svg" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>My Learning Passport</title>
 </head>
 
-<body class="min-h-screen relative bg-slate-900">
+<body class="min-h-screen relative">
