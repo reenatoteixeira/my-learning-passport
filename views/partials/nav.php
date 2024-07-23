@@ -3,7 +3,7 @@
     <div class="w-full flex items-center justify-between sm:w-max sm:mr-6">
       <a href="/">
         <span class="sr-only">My Learning Passport</span>
-        <img src="assets/svg/logo.svg" alt="My Learning Passport's logo." class="size-14">
+        <img src="/assets/svg/logo.svg" alt="My Learning Passport's logo." class="size-14">
       </a>
       
       <button id="mobile-menu-toggle" class="text-gray-500 hover:text-sky-500 sm:hidden">
