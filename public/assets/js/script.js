@@ -13,6 +13,7 @@ MOBILE_MENU_TOGGLE.addEventListener('click', () => {
   MOBILE_MENU_CLOSE.classList.toggle('hidden');
   NAV_MENU.classList.toggle('hidden');
   HEADER_MENU.classList.toggle('rounded-b-lg');
+  HEADER_MENU.classList.toggle('shadow-md');
 });
 
 LOGIN_MENU_TOGGLE.addEventListener('click', () => {
