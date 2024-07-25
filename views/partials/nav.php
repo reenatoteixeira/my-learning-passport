@@ -46,7 +46,7 @@
           <i id="login-menu--close" class="hidden uil uil-angle-up"></i>
         </button>
         
-        <div id="login-menu" class="hidden sm:inline-block sm:opacity-0 sm:absolute sm:bg-white sm:min-w-max
+        <div id="login-menu" class="hidden sm:opacity-0 sm:absolute sm:bg-white sm:min-w-max
           sm:overflow-hidden sm:rounded-lg sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 sm:transition-opacity sm:right-0
            2xl:left-0bre">
           <ul class="space-y-2 mt-3 text-lg sm:text-base sm:mt-0 sm:pl-2 sm:pr-6 sm:py-1 sm:space-y-0">
