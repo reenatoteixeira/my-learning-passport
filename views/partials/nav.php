@@ -18,19 +18,20 @@
         <hr class="border-solid my-3 sm:hidden">
         <ul class="space-y-2 sm:flex sm:space-y-0 sm:gap-4">
           <li>
-            <a href="/" class="flex p-2 rounded-lg font-semibold leading-6 text-gray-500 hover:text-sky-500 sm:w-max">
+            <a href="/" class="<?= isActive('/') ? "text-sky-500" : "text-gray-500" ?> flex p-2 rounded-lg
+            font-semibold leading-6 hover:text-sky-500 sm:w-max">
               Home
             </a>
           </li>
           <li>
-            <a href="/about" class="flex p-2 rounded-lg font-semibold leading-6 text-gray-500 hover:text-sky-500
-              sm:w-max">
+            <a href="/about" class="<?= isActive('/about') ? "text-sky-500" : "text-gray-500" ?> flex p-2
+            rounded-lg font-semibold leading-6 hover:text-sky-500 sm:w-max">
               About
             </a>
           </li>
           <li>
-            <a href="/contact" class="flex p-2 rounded-lg font-semibold leading-6 text-gray-500 hover:text-sky-500
-              sm:w-max">
+            <a href="/contact" class="<?= isActive('/contact') ? "text-sky-500" : "text-gray-500" ?> flex p-2
+            rounded-lg font-semibold leading-6 hover:text-sky-500 sm:w-max">
               Contact
             </a>
           </li>
