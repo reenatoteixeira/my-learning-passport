@@ -11,6 +11,11 @@ class Router
     return $this->add('GET', $uri, $controller);
   }
   
+  public function post(string $uri, string $controller): static
+  {
+    return $this->add('POST', $uri, $controller);
+  }
+  
   public function add(string $method, string $uri, string $controller): static
   {
     $this->routes[] = [
