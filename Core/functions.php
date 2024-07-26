@@ -2,8 +2,9 @@
 function dd(mixed $data): void
 {
   echo '<pre>';
-  die(var_dump($data));
+  var_dump($data);
   echo '</pre>';
+  die();
 }
 
 function base_path(string $path): string
