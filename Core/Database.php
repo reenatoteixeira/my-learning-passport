@@ -24,4 +24,9 @@ class Database
     
     return $this;
   }
+  
+  public function find(): array|bool
+  {
+    return $this->stmt->fetch();
+  }
 }
