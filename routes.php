@@ -5,3 +5,4 @@ $router->get('/contact', 'contact.php');
 $router->get('/student/login', 'student/login.php');
 $router->get('/teacher/login', 'teacher/login.php');
 $router->get('/teacher/register', 'teacher/register.php');
+$router->post('/teacher/register', 'teacher/store.php');
