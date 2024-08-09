@@ -3,7 +3,7 @@ require base_path('views/partials/head.php');
 ?>
 
 <main class="min-h-screen bg-slate-900 px-4 sm:px-6 lg:px-8">
-  <section class="flex flex-col justify-center pb-28 items-center h-screen">
+  <section class="flex flex-col justify-center items-center h-screen">
     <div class="w-full max-w-xl mb-4 sm:mx-auto">
       <a href="/" class="text-white hover:text-gray-300">
         🡰 Back to home
@@ -11,31 +11,46 @@ require base_path('views/partials/head.php');
     </div>
     
     <div class="w-full max-w-xl bg-white p-4 shadow-lg rounded-xl sm:mx-auto">
-      <form action="" method="post">
+      <form action="/teacher/register" method="post">
         <div class="mb-4">
           <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">
             First name
           </label>
-          <input type="text" name="first-name" id="first-name" maxlength="255" placeholder="John" required class="block
+          <input type="text" name="first-name" id="first-name" maxlength="255" placeholder="John" class="block
           w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
           placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
+          
+          <p class="text-red-500 text-xs font-semibold">
+            <?= $errors['first-name'] ?? '' ?>
+          </p>
+        
         </div>
         
         <div class="mb-4">
           <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">
             Last name
           </label>
-          <input type="text" name="last-name" id="last-name" maxlength="255" placeholder="Doe" required class="block
+          <input type="text" name="last-name" id="last-name" maxlength="255" placeholder="Doe" class="block
           w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
           placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
+          
+          <p class="text-red-500 text-xs font-semibold">
+            <?= $errors['last-name'] ?? '' ?>
+          </p>
+        
         </div>
         
         <div class="mb-4">
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">
             Email
           </label>
-          <input type="email" name="email" id="email" maxlength="255" placeholder="johndoe@example.com" required class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset
+          <input type="email" name="email" id="email" maxlength="255" placeholder="johndoe@example.com"
+                 class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset
                  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
+          
+          <p class="text-red-500 text-xs font-semibold">
+            <?= $errors['email'] ?? '' ?>
+          </p>
         </div>
         
         <div class="mb-4">
@@ -45,6 +60,18 @@ require base_path('views/partials/head.php');
           <input type="password" name="password" id="password" required class="block
           w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
           placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
+          
+          <p class="text-red-500 text-xs font-semibold">
+            <?= $errors['password'] ?? '' ?>
+          </p>
+          
+          <ul class="text-gray-400 text-xs mt-1">
+            <li>- At least 6 characters</li>
+            <li>- At least 1 uppercase letter</li>
+            <li>- At least 1 lowercase letter</li>
+            <li>- At least 1 number</li>
+          </ul>
+        
         </div>
         
         <div class="mb-4">
@@ -54,7 +81,12 @@ require base_path('views/partials/head.php');
           <input type="password" name="password-check" id="password-check" required class="block
           w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
           placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
+          
+          <p class="text-red-500 text-xs font-semibold">
+            <?= $errors['password-check'] ?? '' ?>
+          </p>
         </div>
+        
         
         <hr class="my-4 max-w-96 mx-auto">
         
