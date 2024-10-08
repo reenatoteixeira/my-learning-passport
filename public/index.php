@@ -6,7 +6,7 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>My Learning Passport</title>
 </head>
 <body class="bg-slate-900 text-white">
   <main class="h-screen flex flex-col justify-center items-center text-center">
