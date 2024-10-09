@@ -7,8 +7,8 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/svg/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <title>My Learning Passport</title>
 </head>
 
