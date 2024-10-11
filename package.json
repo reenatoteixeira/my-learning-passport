@@ -4,8 +4,8 @@
   "description": "Developed with PHP & MySQL, Tailwind CSS, and MVC design pattern, allowing CRUD operations and data persistence. \"My Learning Passport\" helps teachers keep their students motivated by developing a sense of classroom community, self-evaluation, and responsibility. See more in the README file.",
   "main": "index.php",
   "scripts": {
-    "watch-css": "npx tailwindcss -i ./src/input.css -o public/assets/css/style.css --watch",
-    "build-css": "npx tailwindcss -o public/assets/css/style.css --minify"
+    "watch-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --watch",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/style.css --minify"
   },
   "author": "Renato Teixeira",
   "license": "MIT",

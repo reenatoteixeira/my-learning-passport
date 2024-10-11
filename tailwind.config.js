@@ -4,7 +4,8 @@ module.exports = {
     "./public/*.{html,js,php}",
     "./public/assets/js/*.js",
     "./views/*.php",
-    "./views/**/*.php",],
+    "./views/**/*.php",
+  ],
   theme: {
     extend: {},
   },
