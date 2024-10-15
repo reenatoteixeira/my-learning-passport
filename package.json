@@ -5,11 +5,15 @@
   "main": "index.php",
   "scripts": {
     "watch-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --watch",
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --minify"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --minify",
+    "start-server": "php -S 0.0.0.0:8000 -t public"
   },
   "author": "Renato Teixeira",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "latest": "^0.2.0"
   }
 }
