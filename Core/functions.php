@@ -17,11 +17,11 @@ function routeToController(string $uri, array $routes): void
   if (array_key_exists($uri, $routes)) {
     require($routes[$uri]);
   } else {
-    abort();
+    abort(Response::NOT_FOUND);
   }
 }
 
-function abort(int $code = 404): void
+function abort(int $code): void
 {
   http_response_code($code);
   require "../views/errors/{$code}.php";
