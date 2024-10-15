@@ -2,5 +2,5 @@
 
 class Response
 {
-  const int NOT_FOUND = 404;
+  const NOT_FOUND = 404;
 }
