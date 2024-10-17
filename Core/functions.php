@@ -15,7 +15,7 @@ function isActive(string $uri): bool
 function routeToController(string $uri, array $routes): void
 {
   if (array_key_exists($uri, $routes)) {
-    require($routes[$uri]);
+    require basePath($routes[$uri]);
   } else {
     abort(Response::NOT_FOUND);
   }
@@ -24,7 +24,7 @@ function routeToController(string $uri, array $routes): void
 function abort(int $code): void
 {
   http_response_code($code);
-  require "../views/errors/{$code}.php";
+  view("errors/{$code}.php");
   die();
 }
 
