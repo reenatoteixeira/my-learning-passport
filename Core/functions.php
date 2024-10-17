@@ -27,3 +27,8 @@ function abort(int $code): void
   require "../views/errors/{$code}.php";
   die();
 }
+
+function basePath(string $path): string
+{
+  return BASE_PATH . $path;
+}
