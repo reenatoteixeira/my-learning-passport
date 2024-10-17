@@ -32,3 +32,9 @@ function basePath(string $path): string
 {
   return BASE_PATH . $path;
 }
+
+function view(string $path, array $data = []): void
+{
+  extract($data);
+  require basePath("views/{$path}");
+}
