@@ -1,4 +1,6 @@
 <?php
+const BASE_PATH = __DIR__ . '/../';
+
 require '../Core/functions.php';
-require '../Core/Response.php';
-require '../Core/router.php';
+require basePath('Core/Response.php');
+require basePath('Core/router.php');
