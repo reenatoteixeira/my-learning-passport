@@ -1,4 +1,7 @@
 <?php
+
+use Core\Response;
+
 function dd(mixed $data): void
 {
   echo '<pre>';
