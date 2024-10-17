@@ -1,8 +1,8 @@
 <?php
-require 'partials/head.php';
-require 'partials/nav.php';
+require basePath('views/partials/head.php');
+require basePath('views/partials/nav.php');
 ?>
-
+  
   <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <section class="flex flex-col justify-center items-center h-screen text-center">
       <p class="text-base font-semibold text-sky-500">Hey! Nice to see you here.</p>
@@ -12,5 +12,5 @@ require 'partials/nav.php';
   </main>
 
 <?php
-require 'partials/footer.php';
+require basePath('views/partials/footer.php');
 ?>

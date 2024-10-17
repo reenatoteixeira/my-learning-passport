@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . '/../partials/head.php';
-require __DIR__ . '/../partials/nav.php';
+require basePath('views/partials/head.php');
+require basePath('views/partials/nav.php');
 ?>
   
   <main class="min-h-screen px-4 sm:px-6 lg:px-8">
@@ -20,5 +20,5 @@ require __DIR__ . '/../partials/nav.php';
   </main>
 
 <?php
-require __DIR__ . '/../partials/footer.php';
+require basePath('views/partials/footer.php');
 ?>

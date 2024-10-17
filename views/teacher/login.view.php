@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/../partials/head.php';
+require basePath('views/partials/head.php');
 ?>
   
   <main class="min-h-screen bg-slate-900 px-4 sm:px-6 lg:px-8">
@@ -16,7 +16,8 @@ require __DIR__ . '/../partials/head.php';
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">
               Email
             </label>
-            <input type="email" name="email" id="email" maxlength="255" placeholder="johndoe@example.com" required class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset
+            <input type="email" name="email" id="email" maxlength="255" placeholder="johndoe@example.com" required
+                   class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset
                  ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-500 sm:leading-6">
           </div>
           
@@ -61,5 +62,5 @@ require __DIR__ . '/../partials/head.php';
   </main>
 
 <?php
-require __DIR__ . '/../partials/footer.php';
+require basePath('views/partials/footer.php');
 ?>
