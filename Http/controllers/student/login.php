@@ -1,2 +1,2 @@
 <?php
-require '../views/student/login.view.php';
+view('student/login.view.php');
