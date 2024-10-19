@@ -6,5 +6,6 @@ $router->get('/contact', 'Http/controllers/contact.php');
 
 $router->get('/student/login', 'Http/controllers/student/login.php');
 
+$router->get('/teacher', 'Http/controllers/teacher/index.php');
 $router->get('/teacher/login', 'Http/controllers/teacher/login.php');
 $router->get('/teacher/register', 'Http/controllers/teacher/register.php');
